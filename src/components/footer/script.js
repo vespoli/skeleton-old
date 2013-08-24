@@ -1,0 +1,4 @@
+// footer
+jQuery(function ($) {
+    
+});

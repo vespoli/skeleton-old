@@ -1,0 +1,8 @@
+[
+    {
+        "name": "interior",
+        "html": "../../../html/interior.html",
+        "jade": "interior.jade",
+        "readme": "readme.md"
+    }
+]

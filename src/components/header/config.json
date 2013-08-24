@@ -1,0 +1,12 @@
+[
+    {
+        "name": "header",
+        "html": "_default.html",
+        "jade": "_default.jade",
+        "scss": "style.scss",
+        "js": "script.js",
+        "harness": "<div><div class='token'></div></div>",
+        "token": "div.token",
+        "readme": "readme.md"
+    }
+]

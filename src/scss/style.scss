@@ -1,0 +1,16 @@
+@import "compass";          // mixin library;
+@import "./utility";        // some utility classes;
+@import "./libs/reset";     // reset all styles;
+@import "./forms";          // form element styles;
+@import "./typography";     // fonts and global type styles;
+
+// component styles;
+@import "../components/grid-f4/style";
+
+@import "../components/header/style";
+@import "../components/footer/style";
+
+@import "print"; // print styles;
+
+//add any global styles
+

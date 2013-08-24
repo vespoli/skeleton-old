@@ -1,4 +1,4 @@
 skeleton
 ========
 
-Base project folder structure
+Base folder structure for new projects. Non SPA
