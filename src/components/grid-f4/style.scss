@@ -5,10 +5,20 @@ $small-screen: 768px;
 $medium-screen: 900px;
 //max width of layout. 100% for full width
 $row-width: 1000px;
-$column-gutter: 0px;
+$column-gutter: 0;
 $total-columns: 24;
 $default-float: left;
 $opposite-direction: right;
+
+.columns,
+.columns:before,
+.columns:after {
+  @include box-sizing(border-box);
+  //ie polyfill. just applied to columns. 
+  //Applying to * is too heavy when supporting ie
+  @include border-box-shim();
+ 
+}
 
 //
 // Grid Calc Function
