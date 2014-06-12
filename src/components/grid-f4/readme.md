@@ -1,1 +1,0 @@
-Move the box-sizing.htc to the root js folder or if you place it somewhere else, update the reference in the scss

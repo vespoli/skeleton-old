@@ -1,17 +1,18 @@
 @import "compass";          // mixin library;
-@import "breakpoint";       // media query goodness;
 @import "./utility";        // some utility classes;
 @import "./libs/reset";     // reset all styles;
 @import "./forms";          // form element styles;
 @import "./typography";     // fonts and global type styles;
+@import "./grid";           // default project grid
+
 
 // component styles;
-@import "../components/grid-f4/style";
-
 @import "../components/header/style";
 @import "../components/footer/style";
 
-@import "print"; // print styles;
+
+// print styles;
+@import "./print";
 
 //add any global styles
 
