@@ -114,4 +114,72 @@
 //   if (interval > 1) {return interval + " minutes";}
 //   if (interval === 1) {return interval + " minute";}
 //   return Math.floor(seconds) + " seconds";
+
+
 // };
+
+// // Dynamic script loading. update FOO for your app namespace
+// // http://css-tricks.com/snippets/javascript/async-script-loader-with-callback/
+// // modified from helpful comments
+// FOO.Loader = function () {};
+// FOO.Loader.prototype = {
+//   require: function (scripts, callback) {
+//     this.loadCount = 0;
+//     this.totalRequired = scripts.length;
+//     this.callback = callback;
+
+//     for (var i = 0; i < scripts.length; i++) {
+//       this.writeScript(scripts[i]);
+//     }
+//   },
+//   loaded: function (evt) {
+//     this.loadCount++;
+
+//     if (this.loadCount === this.totalRequired && typeof this.callback === 'function') {this.callback.call();}
+//   },
+//   writeScript: function (src) {
+//     var self = this;
+//     var s = document.createElement('script');
+//     s.type = 'text/javascript';
+//     s.async = true;
+//     s.src = src;
+//     //IE shim
+//     if (s.attachEvent)  {
+//       s.onreadystatechange = function(e) {
+//         if (s.readyState in {loaded: 1, complete: 1}) {
+//           self.loaded(e);
+//         }
+//       };
+//     } else if (s.addEventListener){
+//       s.addEventListener('load', function (e) {
+//         self.loaded(e);
+//       }, false);
+//     }
+//     var head = document.getElementsByTagName('head')[0];
+//     head.appendChild(s);
+//   }
+// };
+
+
+// Avoid `console` errors in browsers that lack a console.
+(function() {
+  var method;
+  var noop = function () {};
+  var methods = [
+    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+    'timeStamp', 'trace', 'warn'
+  ];
+  var length = methods.length;
+  var console = (window.console = window.console || {});
+
+  while (length--) {
+    method = methods[length];
+
+    // Only stub undefined methods.
+    if (!console[method]) {
+      console[method] = noop;
+    }
+  }
+}());
