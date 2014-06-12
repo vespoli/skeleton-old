@@ -1,9 +1,9 @@
 @import "compass";          // mixin library;
-@import "./utility";        // some utility classes;
+@import "./libs/utility";        // some utility classes;
 @import "./libs/reset";     // reset all styles;
+@import "./libs/grid";           // default project grid
 @import "./forms";          // form element styles;
 @import "./typography";     // fonts and global type styles;
-@import "./grid";           // default project grid
 
 
 // component styles;

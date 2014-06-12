@@ -1,16 +1,17 @@
 # Require any additional compass plugins here.
 require "compass"
-require "breakpoint"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css"
+css_dir = "_res/css"
 sass_dir = "src/scss"
-images_dir = "img"
-javascripts_dir = "js"
-fonts_dir = "fonts"
+images_dir = "_res/img"
+javascripts_dir = "_res/js"
+fonts_dir = "_res/fonts"
 
-output_style = :compressed
+# output_style = :compressed
+# Use this output during development or when assets will be minified by CMS
+output_style = :expanded
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
