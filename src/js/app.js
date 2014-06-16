@@ -13,10 +13,10 @@ FOO.someWrapperObject = function() {
   },
 
   bar = {
-    barMethodA = function(){
+    barMethodA : function(){
 
     },
-    barMethodB - function(){
+    barMethodB : function(){
 
     }
   },

@@ -64,12 +64,19 @@ ol.inline > li {
 @-ms-viewport {
   width: device-width;
 }
+/* line 2, ../../src/scss/libs/_reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
  * http://cssreset.com
  */
-/* line 6, ../../src/scss/libs/_reset.scss */
+/* line 9, ../../src/scss/libs/_reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -91,35 +98,35 @@ time, mark, audio, video {
   background: transparent;
 }
 
-/* line 26, ../../src/scss/libs/_reset.scss */
+/* line 29, ../../src/scss/libs/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 29, ../../src/scss/libs/_reset.scss */
+/* line 32, ../../src/scss/libs/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 33, ../../src/scss/libs/_reset.scss */
+/* line 36, ../../src/scss/libs/_reset.scss */
 nav ul {
   list-style: none;
 }
 
-/* line 36, ../../src/scss/libs/_reset.scss */
+/* line 39, ../../src/scss/libs/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 39, ../../src/scss/libs/_reset.scss */
+/* line 42, ../../src/scss/libs/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 44, ../../src/scss/libs/_reset.scss */
+/* line 47, ../../src/scss/libs/_reset.scss */
 a {
   margin: 0;
   padding: 0;
@@ -129,7 +136,7 @@ a {
 }
 
 /* change colours to suit your needs */
-/* line 52, ../../src/scss/libs/_reset.scss */
+/* line 55, ../../src/scss/libs/_reset.scss */
 ins {
   background-color: #ff9;
   color: #000;
@@ -137,7 +144,7 @@ ins {
 }
 
 /* change colours to suit your needs */
-/* line 58, ../../src/scss/libs/_reset.scss */
+/* line 61, ../../src/scss/libs/_reset.scss */
 mark {
   background-color: #ff9;
   color: #000;
@@ -145,25 +152,25 @@ mark {
   font-weight: bold;
 }
 
-/* line 64, ../../src/scss/libs/_reset.scss */
+/* line 67, ../../src/scss/libs/_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 67, ../../src/scss/libs/_reset.scss */
+/* line 70, ../../src/scss/libs/_reset.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 71, ../../src/scss/libs/_reset.scss */
+/* line 74, ../../src/scss/libs/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
-/* line 76, ../../src/scss/libs/_reset.scss */
+/* line 79, ../../src/scss/libs/_reset.scss */
 hr {
   display: block;
   height: 1px;
@@ -173,12 +180,12 @@ hr {
   padding: 0;
 }
 
-/* line 84, ../../src/scss/libs/_reset.scss */
+/* line 87, ../../src/scss/libs/_reset.scss */
 input, select {
   vertical-align: middle;
 }
 
-/* line 87, ../../src/scss/libs/_reset.scss */
+/* line 90, ../../src/scss/libs/_reset.scss */
 img {
   max-width: 100%;
 }
