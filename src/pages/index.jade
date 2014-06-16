@@ -1,0 +1,54 @@
+doctype 5
+include ../includes/html
+  head
+
+    include ../includes/head
+    //- insert page specific CSS/JS;
+
+  body
+
+    .container
+      .row
+        .col-lg-12
+          h1 FOO Client - Static Templates Listing
+
+    .container
+      .row
+        .col-lg-3.col-md-3.col-sm-3.col-xs-12
+          h2 Pages Col 1
+          ul
+            li: a(href="/html/home/") Home
+
+
+        .col-lg-6.col-md-6.col-sm-6.col-xs-12
+          h2 Pages Col 2
+          ul
+            li: a(href="/html/foo/") Foo Page
+
+      hr
+
+      .row
+        .col-lg-3.col-md-3.col-sm-3.col-xs-12
+          h2 Resources
+          ul
+            li: a(href="/resources/foo") Some PSD
+
+        .col-lg-3.col-md-3.col-sm-3.col-xs-12
+          h2 Documentation
+          ul
+            li: a(href="/html/resources/foo") Wireframes
+            li: a(href="/html/foo/") Page type 1
+        .col-lg-3.col-md-3.col-sm-3.col-xs-12
+        .col-lg-3.col-md-3.col-sm-3.col-xs-12
+
+      hr
+
+      p Last build: #{new Date()}
+
+
+
+    include ../includes/foot
+
+
+
+

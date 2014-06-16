@@ -1,0 +1,55 @@
+// utility classes;
+// hide anything;
+.hide {
+  display: none !important;
+}
+// hidden, but also needs to have it's height/width calculated (so display: none would result in 0);
+.offscreen {
+  top: -9999em;
+  left: -9999em;
+}
+
+.left {float: left !important; }
+.right {float: right !important; }
+.text-left {text-align: left !important; }
+.text-right {text-align: right !important; }
+.text-center {text-align: center !important; }
+.text-justify {text-align: justify !important; }
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+ul.inline,
+ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+ul.inline  > li,
+ol.inline  > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+// Windows 8 snap fix;
+// To get IE10 in snap mode does not respect the values set in the META tags;
+@-ms-viewport {
+  width: device-width;
+}
+//override compass mixin which sucks
+@mixin clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin border-box-shim {
+  *behavior: url(/_res/js/libs/box-sizing.htc);
+}
