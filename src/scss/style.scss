@@ -1,18 +1,18 @@
-@import "compass";          // mixin library;
-@import "./libs/utility";   // some utility classes;
-@import "./libs/reset";     // reset all styles;
+@import "compass";            // mixin library;
+@import "./libs/utility";     // some utility classes;
+@import "./libs/reset";       // reset all styles;
 
 // libs default
-@import "./libs/_variables";
 @import "./libs/_mixins";
+@import "./variables";        // variables override - site specific
+@import "./libs/_variables";  // variables - defaults
 
 
 // libs overrides & site specifics
-@import "./variables";      // variables override
-@import "./mixins";         // utility mixins
-@import "./libs/grid";      // project grid
-@import "./forms";          // form element styles;
-@import "./typography";     // fonts and global type styles;
+@import "./mixins";           // utility mixins - site specific
+@import "./libs/_grid";       // project grid
+@import "./forms";            // form element styles;
+@import "./typography";       // fonts and global type styles;
 
 
 // Component styles;
@@ -21,6 +21,13 @@
 
 
 // Site wide (global) styles
+
+
+
+
+
+
+
 
 
 
