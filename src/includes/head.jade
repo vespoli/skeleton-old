@@ -70,6 +70,11 @@ meta(name="keywords", content="[insert page keywords]")
 link(rel="shortcut icon", href="../_res/img/favicon.ico")
 link(rel="stylesheet", href="../_res/css/style.css")
 
+//- replace no-js with js for js enabled browsers
+script.
+  document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace( /(?:^|\s)no-js(?!\S)/ , 'js' );
+
+
 // html5 shiv for older IEs, and a fallback;
 //if lt IE 9
   script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
