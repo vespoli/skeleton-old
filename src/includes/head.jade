@@ -72,7 +72,7 @@ link(rel="stylesheet", href="../_res/css/style.css")
 
 //- replace no-js with js for js enabled browsers
 script.
-  document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace( /(?:^|\s)no-js(?!\S)/ , 'js' );
+  (function(){var e = document.getElementsByTagName('html')[0]; e.className = e.className.replace( /(?:^|\s)no-js(?!\S)/ , 'js' );})();
 
 
 // html5 shiv for older IEs, and a fallback;
