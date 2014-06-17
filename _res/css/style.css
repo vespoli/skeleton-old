@@ -64,6 +64,97 @@ ol.inline > li {
 @-ms-viewport {
   width: device-width;
 }
+@-webkit-keyframes fadeIn {
+  /* line 57, ../../src/scss/libs/_utility.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 57, ../../src/scss/libs/_utility.scss */
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  /* line 58, ../../src/scss/libs/_utility.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 58, ../../src/scss/libs/_utility.scss */
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  /* line 59, ../../src/scss/libs/_utility.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 59, ../../src/scss/libs/_utility.scss */
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  /* line 61, ../../src/scss/libs/_utility.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 61, ../../src/scss/libs/_utility.scss */
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  /* line 62, ../../src/scss/libs/_utility.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 62, ../../src/scss/libs/_utility.scss */
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  /* line 63, ../../src/scss/libs/_utility.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 63, ../../src/scss/libs/_utility.scss */
+  to {
+    opacity: 0;
+  }
+}
+/* line 66, ../../src/scss/libs/_utility.scss */
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in .5s;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in .5s;
+  animation: fadeIn ease-in .5s;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 75, ../../src/scss/libs/_utility.scss */
+.fade-out {
+  opacity: 0;
+  -webkit-animation: fadeOut ease-in .15s;
+  -moz-animation: fadeOut ease-in .15s;
+  animation: fadeOut ease-in .15s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
 /* line 2, ../../src/scss/libs/_reset.scss */
 * {
   -moz-box-sizing: border-box;
