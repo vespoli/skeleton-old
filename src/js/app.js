@@ -1,6 +1,7 @@
 // Main application code for site
 /*jslint devel: true, browser: true, indent: 2 */
 /*global jQuery:true */
+/*global FOO:true */
 
 /*******************************************************************************
 * Global utility "class"
@@ -24,7 +25,7 @@ FOO.someWrapperObject = function() {
   // private function
   bat = function(){
 
-  }
+  };
 
   //public methods
   return {
@@ -32,4 +33,4 @@ FOO.someWrapperObject = function() {
     bar: bar
   };
 }
-
+;

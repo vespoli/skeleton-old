@@ -1,4 +1,4 @@
 // footer
-jQuery(function ($) {
-    
-});
+(function($){
+
+})(window.jQuery);

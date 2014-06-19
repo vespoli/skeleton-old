@@ -1,6 +1,7 @@
 // this is where we aggregate main script for minified output
 /*jslint devel: true, browser: true, indent: 2 */
 /*global jQuery:true */
+/*jshint expr: true */
 
 // plugins, libraries etc. All should live in libs folder
 // @codekit-prepend "./libs/utility.js";

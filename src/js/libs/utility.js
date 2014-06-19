@@ -160,6 +160,10 @@
 //   }
 // };
 
+//window.location.origin for old IE
+if (!window.location.origin) {
+  window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+}
 
 // Avoid `console` errors in browsers that lack a console.
 (function() {

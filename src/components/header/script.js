@@ -1,4 +1,4 @@
 // header
-jQuery(function ($) {
-    
-});
+(function($){
+
+})(window.jQuery);
