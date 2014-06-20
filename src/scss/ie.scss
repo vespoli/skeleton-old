@@ -1,0 +1,20 @@
+@import "compass";            // mixin library;
+
+// libs default
+@import "./libs/_mixins";
+@import "./variables";        // variables override - site specific
+@import "./libs/_variables";  // variables - defaults
+
+
+//make a grid for old ie
+.lt-ie9{
+  .container {
+    width: $container-lg;
+  }
+
+  @include make-grid-columns-float(lg);
+  @include make-grid($grid-columns, lg, width);
+  @include make-grid($grid-columns, lg, pull);
+  @include make-grid($grid-columns, lg, push);
+  @include make-grid($grid-columns, lg, offset);
+}
