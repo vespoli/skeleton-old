@@ -160,7 +160,7 @@
 //   }
 // };
 
-//window.location.origin for old IE
+//window.location.origin for lt IE10
 if (!window.location.origin) {
   window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
 }
